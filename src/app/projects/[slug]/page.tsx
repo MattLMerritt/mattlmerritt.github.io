@@ -4,12 +4,7 @@ import Link from 'next/link';
 import { Navigation } from '@/components/Navigation';
 import { websiteData } from '@/data/website';
 import { ScrollReveal } from '@/components/ScrollReveal';
-import type { Metadata, ResolvingMetadata } from 'next';
-
-type ProjectPageProps = {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
+import type { Metadata } from 'next';
 
 // Generate static params for all projects
 export function generateStaticParams() {
@@ -22,8 +17,7 @@ export function generateStaticParams() {
 
 // Generate metadata for each project page
 export async function generateMetadata(
-  { params }: ProjectPageProps,
-  parent: ResolvingMetadata
+  { params }: { params: { slug: string } }
 ): Promise<Metadata> {
   const { slug } = params;
   const { projects } = websiteData;
@@ -49,7 +43,7 @@ export async function generateMetadata(
   };
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
+export default async function ProjectPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const { personalInfo, projects } = websiteData;
   
