@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-
+import { Vanta } from '@/types';
 export function VantaNetBackground() {
   useEffect(() => {
     // Function to load scripts dynamically
@@ -34,7 +34,7 @@ export function VantaNetBackground() {
         // Wait a bit for scripts to be ready
         setTimeout(() => {
           const setVanta = () => {
-            if (window.THREE && window.VANTA && window.VANTA.NET) {
+            if (window.THREE && window.VANTA?.NET) {
               try {
                 window.VANTA.NET({
                   el: "#vanta-bg",
@@ -87,7 +87,7 @@ export function VantaNetBackground() {
 // Extend Window interface to include THREE and VANTA
 declare global {
   interface Window {
-    THREE: any;
-    VANTA: any;
+    THREE: unknown;
+    VANTA: Vanta;
   }
 }

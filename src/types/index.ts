@@ -68,3 +68,39 @@ export interface WebsiteData {
   contactLinks: ContactLink[];
   education?: Education[];
 }
+
+// A basic type for the Vanta effect instance
+export interface VantaEffect {
+  destroy: () => void;
+}
+
+// A basic type for the VANTA object
+export interface Vanta {
+  TOPOLOGY?: (options: {
+    el: HTMLDivElement | null;
+    mouseControls: boolean;
+    touchControls: boolean;
+    gyroControls: boolean;
+    minHeight: number;
+    minWidth: number;
+    scale: number;
+    scaleMobile: number;
+    color: number;
+    backgroundColor: number;
+  }) => VantaEffect;
+  NET?: (options: {
+    el: string;
+    mouseControls: boolean;
+    touchControls: boolean;
+    gyroControls: boolean;
+    minHeight: number;
+    minWidth: number;
+    scale: number;
+    scaleMobile: number;
+    color: number;
+    backgroundColor: number;
+    points: number;
+    maxDistance: number;
+    spacing: number;
+  }) => VantaEffect;
+}

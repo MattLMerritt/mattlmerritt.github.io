@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { Vanta, VantaEffect } from '@/types';
 
 interface VantaBackgroundProps {
   children: React.ReactNode;
@@ -9,13 +10,13 @@ interface VantaBackgroundProps {
 // Extend Window interface to include VANTA
 declare global {
   interface Window {
-    VANTA: any;
+    VANTA: Vanta;
   }
 }
 
 export function VantaBackground({ children }: VantaBackgroundProps) {
   const vantaRef = useRef<HTMLDivElement>(null);
-  const vantaEffect = useRef<any>(null);
+  const vantaEffect = useRef<VantaEffect | null>(null);
 
   useEffect(() => {
     // Function to load scripts dynamically
@@ -39,7 +40,7 @@ export function VantaBackground({ children }: VantaBackgroundProps) {
 
     // Initialize Vanta effect
     const setVanta = () => {
-      if (window.VANTA && window.VANTA.TOPOLOGY && vantaRef.current && !vantaEffect.current) {
+      if (window.VANTA?.TOPOLOGY && vantaRef.current && !vantaEffect.current) {
         try {
           vantaEffect.current = window.VANTA.TOPOLOGY({
             el: vantaRef.current,
