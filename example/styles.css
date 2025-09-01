@@ -1,0 +1,171 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Permanent dark theme with excellent contrast */
+:root {
+    --primary-color: #3b82f6;        /* Blue 500 - Bright enough for dark bg */
+    --primary-hover: #60a5fa;        /* Blue 400 - Lighter hover state */
+    --accent-color: #2563eb;         /* Blue 600 - Rich accent */
+    --bg-primary: #020617;           /* Slate 950 - True dark background */
+    --bg-secondary: #0f172a;         /* Slate 900 - Elevated surfaces */
+    --bg-tertiary: #1e293b;          /* Slate 800 - Card backgrounds */
+    --text-primary: #f8fafc;         /* Slate 50 - Maximum contrast on dark */
+    --text-secondary: #cbd5e1;       /* Slate 300 - High contrast secondary */
+    --text-tertiary: #94a3b8;        /* Slate 400 - Muted but readable */
+    --border-color: #334155;         /* Slate 700 - Visible dark borders */
+    --border-light: #475569;         /* Slate 600 - Subtle dark borders */
+    --shadow-light: rgba(0, 0, 0, 0.2);
+    --shadow-medium: rgba(0, 0, 0, 0.3);
+    --shadow-strong: rgba(0, 0, 0, 0.4);
+}
+
+/* Modern card components inspired by clean UI */
+.modern-card {
+    background: var(--bg-primary);
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px var(--shadow-light), 0 2px 4px -2px var(--shadow-medium);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modern-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px var(--shadow-medium), 0 8px 10px -6px var(--shadow-strong);
+}
+
+/* Clean skill badges with dark theme styling */
+.skill-badge {
+    background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+    color: #dbeafe;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.25);
+}
+
+/* Timeline with modern styling */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 3px solid var(--bg-primary);
+    box-shadow: 0 0 0 3px var(--primary-color);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover::before {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Project cards with dark theme styling */
+.project-card {
+    background: var(--bg-primary);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px var(--shadow-light), 0 2px 4px -2px var(--shadow-medium);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 50px -12px var(--shadow-strong);
+    border-color: var(--primary-color);
+}
+
+.project-card img {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Typography hierarchy */
+.hero-text {
+    color: var(--text-primary);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.subtitle-text {
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.muted-text {
+    color: var(--text-tertiary);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Modern button styles */
+.modern-button {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px 0 var(--shadow-medium);
+}
+
+.modern-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px 0 var(--shadow-strong);
+}
+
+/* Glass morphism effects for dark theme */
+.glass-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+/* Scroll reveal animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 8px;
+}
+
+/* Section backgrounds with dark theme gradients */
+.section-bg-light {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.section-bg-primary {
+    background: var(--bg-primary);
+}

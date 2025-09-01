@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-900 text-slate-50 transition-all duration-500">
+
+    <!-- Header -->
+    <header class="bg-slate-900/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-700/50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">Your Name</div>
+            <div class="flex items-center">
+                <a href="#experience" class="text-slate-300 hover:text-blue-400 px-3 py-2 font-medium transition-all duration-200 rounded-lg hover:bg-blue-900/20">Experience</a>
+                <a href="#skills" class="text-slate-300 hover:text-blue-400 px-3 py-2 font-medium transition-all duration-200 rounded-lg hover:bg-blue-900/20">Skills</a>
+                <a href="#projects" class="text-slate-300 hover:text-blue-400 px-3 py-2 font-medium transition-all duration-200 rounded-lg hover:bg-blue-900/20">Projects</a>
+                                <a href="#contact" class="text-slate-300 hover:text-blue-400 px-3 py-2 font-medium transition-all duration-200 rounded-lg hover:bg-blue-900/20">Contact</a>
+            </div>
+        </nav>
+    </header>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center mb-16 reveal">
+            <img class="w-32 h-32 rounded-full mx-auto mb-4" src="https://placehold.co/128x128/e2e8f0/333?text=You" alt="Your Name" onerror="this.onerror=null;this.src='https://placehold.co/128x128/e2e8f0/333?text=Error';">
+            <h1 class="text-4xl font-bold mb-2 hero-text">Hi, I'm [Your Name]</h1>
+            <p class="text-lg subtitle-text">I'm a [Your Profession] based in [Your City]. I love building things for the web.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-20 reveal">
+            <h2 class="text-4xl font-bold text-center mb-16 hero-text">My Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8 relative before:absolute before:left-[-0.5rem] before:top-0 before:bottom-0 before:w-0.5 before:bg-blue-500 before:shadow-sm">
+                <!-- Timeline Item 1 -->
+                <div class="modern-card relative">
+                    <div class="absolute -left-6 top-8 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-900 shadow-lg"></div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">Senior Web Developer at Tech Solutions</h3>
+                    <p class="text-sm muted-text mb-3 font-medium">January 2022 - Present</p>
+                    <p class="subtitle-text leading-relaxed">I lead the development of client-facing web applications, focusing on performance and user experience. I've had the opportunity to mentor junior developers and contribute to our internal component library.</p>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="modern-card relative">
+                    <div class="absolute -left-6 top-8 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-900 shadow-lg"></div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">Web Developer at Web Innovators</h3>
+                    <p class="text-sm muted-text mb-3 font-medium">June 2019 - December 2021</p>
+                    <p class="subtitle-text leading-relaxed">Developed and maintained responsive websites for a variety of clients. Worked closely with designers to bring mockups to life and ensure a seamless user experience across all devices.</p>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="modern-card relative">
+                    <div class="absolute -left-6 top-8 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-900 shadow-lg"></div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">Junior Developer at Creative Agency</h3>
+                    <p class="text-sm muted-text mb-3 font-medium">May 2018 - May 2019</p>
+                    <p class="subtitle-text leading-relaxed">Assisted the development team in creating and updating websites. This was my first role in the industry and I learned a great deal about teamwork and professional coding standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20 reveal py-16">
+            <h2 class="text-4xl font-bold text-center mb-16 hero-text">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Tailwind CSS</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Figma</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20 reveal">
+            <h2 class="text-4xl font-bold text-center mb-16 hero-text">Personal Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/60a5fa/ffffff?text=Project+1" alt="Project 1" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/333?text=Error';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 hero-text">Project Title One</h3>
+                        <p class="subtitle-text mb-6 leading-relaxed">A brief description of the project, what it does, and the technologies used to build this amazing application.</p>
+                        <button class="modern-button">View Project →</button>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+2" alt="Project 2" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/333?text=Error';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 hero-text">Project Title Two</h3>
+                        <p class="subtitle-text mb-6 leading-relaxed">A brief description of the project, what it does, and the technologies used to build this amazing application.</p>
+                        <button class="modern-button">View Project →</button>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Project+3" alt="Project 3" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/333?text=Error';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 hero-text">Project Title Three</h3>
+                        <p class="subtitle-text mb-6 leading-relaxed">A brief description of the project, what it does, and the technologies used to build this amazing application.</p>
+                        <button class="modern-button">View Project →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="section-bg-light mt-16 py-12 border-t border-slate-700/50">
+        <div class="container mx-auto px-6 text-center">
+            <div class="modern-card max-w-md mx-auto">
+                <h3 class="text-xl font-bold mb-4 hero-text">Let's Connect!</h3>
+                <p class="subtitle-text mb-6">Feel free to reach out for collaborations or just a friendly chat.</p>
+                <a href="mailto:merrittlmatt@gmail.com" class="modern-button inline-block mb-6">merrittlmatt@gmail.com</a>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-slate-300 hover:text-blue-400 transition-all duration-200 font-medium hover:scale-110">GitHub</a>
+                    <a href="#" class="text-slate-300 hover:text-blue-400 transition-all duration-200 font-medium hover:scale-110">LinkedIn</a>
+                    <a href="#" class="text-slate-300 hover:text-blue-400 transition-all duration-200 font-medium hover:scale-110">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Animation Logic
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Optional: unobserve after it's visible so it doesn't re-animate
+                    // observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        const revealElements = document.querySelectorAll('.reveal');
+        revealElements.forEach(el => observer.observe(el));
+
+    </script>
+</body>
+</html>
