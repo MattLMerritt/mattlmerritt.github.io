@@ -203,7 +203,7 @@ export const websiteData: WebsiteData = {
   contactLinks: [
     { id: "github", name: "GitHub", url: "https://github.com/MattLMerritt" },
     { id: "linkedin", name: "LinkedIn", url: "https://www.linkedin.com/in/matthew-merritt/" },
-    { id: "email", name: "Email", url: "mailto:merritlmatt@gmail.com" },
+    { id: "email", name: "Email", url: "mailto:merrittlmatt@gmail.com" },
   ],
   education: [
     {
